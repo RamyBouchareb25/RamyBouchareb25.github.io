@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6b03e29a.css",
-    "main.js": "/static/js/main.b3b2cdf4.js",
+    "main.js": "/static/js/main.06ea5483.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/bolt-down-left.svg": "/static/media/bolt-down-left.aae72339ea1f214f69466bafc00cc441.svg",
     "static/media/bolt-down-right.svg": "/static/media/bolt-down-right.e2ccb6cc052195e97653505e12bf3bff.svg",
@@ -28,11 +28,11 @@
     "static/media/Arrow2.svg": "/static/media/Arrow2.72aa90b947f619140fb62733cdd8f677.svg",
     "static/media/arrow.svg": "/static/media/arrow.343abf190ccae35a3411616bc0ca9d1c.svg",
     "main.6b03e29a.css.map": "/static/css/main.6b03e29a.css.map",
-    "main.b3b2cdf4.js.map": "/static/js/main.b3b2cdf4.js.map",
+    "main.06ea5483.js.map": "/static/js/main.06ea5483.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b03e29a.css",
-    "static/js/main.b3b2cdf4.js"
+    "static/js/main.06ea5483.js"
   ]
 }
