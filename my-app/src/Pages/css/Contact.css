@@ -1,0 +1,16 @@
+.editor {
+    background-color: var(--primary-2);
+}
+.monaco-editor {
+    --vscode-editor-background: var(--primary-2) !important; /* Set the background color to blue */
+  }
+  .monaco-editor .margin{
+    background-color: var(--primary-2) !important;
+  }
+  .form-container {
+    width: 374px;
+    border-right: 1px var(--grey) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

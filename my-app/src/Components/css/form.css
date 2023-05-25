@@ -1,0 +1,45 @@
+textarea {
+    resize: none;
+    height: 15vh;
+    padding-top: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    margin: 0 auto;
+    height: 50vh;
+    justify-content: space-evenly;
+    margin-bottom: 10pc;
+}
+input[type="text"],input[type="email"],textarea {
+    background-color: var(--primary-3);
+    border: var(--grey) 1px solid;
+    border-radius: 5px;
+    color: var(--secondary-1);
+    padding-left: 10px;
+}
+input[type="text"],input[type="email"] {
+    height: 3vh;
+}
+input[type="text"]:focus-visible,input[type="email"]:focus-visible,textarea:focus-visible {
+    outline: none;
+    border: var(--secondary-1) 2px solid;
+}
+input[type="submit"] {
+    background-color: #1C2B3A;
+    border: var(--grey) 1px solid;
+    border-radius: 7px;
+    color: white;
+    height: 4vh;
+    width: 125px;
+    cursor: pointer;
+}
+label {
+    color: var(--secondary-1);
+    font-size: 1.5vh;
+}
+::placeholder {
+    color: var(--secondary-1);
+    font-size: 1.5vh;
+}

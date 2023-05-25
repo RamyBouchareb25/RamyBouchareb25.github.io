@@ -1,0 +1,9 @@
+.game-container {
+    background: linear-gradient(150.26deg, rgba(23, 85, 83, 0.7) 1.7%, rgba(67, 217, 173, 0.091) 81.82%);
+    height: 450px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    padding: 50px;
+}

@@ -1,0 +1,69 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+  body {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+  }
+  .navbar {
+    overflow: hidden;
+    border-bottom: var(--grey) 1px solid;
+  }
+  
+  .navbar ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .nav-element {
+    display: block;
+    color: var(--secondary-1);
+    height: 5vh;
+    text-decoration: none;
+    border-right: var(--grey) 1px solid;
+    border-left: var(--grey) 1px solid;
+    text-align: center;
+    width: 124px;
+    transition: all .5s linear;
+  }
+  .button:hover {
+    color: white !important;
+    border-bottom: white 1px solid;
+    cursor: pointer; 
+    box-shadow: inset 0px -5px 5px -4px white;
+    }
+    .name {
+    padding-left: 1vw;
+    padding-top: 1vh;
+    height: 100%;
+    text-align: start;
+    width: 227px;
+  }
+  .button {
+    border-bottom: none;
+    border-top: none;
+    font-family: unset;
+    background-color: #011627;
+    line-height: 2pc;
+  }
+  .underline {
+    position: absolute;
+    background-color: var(--accent-1);
+    height: 2px;
+    width: 125px;
+    bottom: 0;
+    left: 0;
+    transition: all 250ms ease-in-out;
+  }
+  .active {
+    color: white !important;
+    border-bottom: white 1px solid;
+    box-shadow: inset 0px -9px 5px -4px var(--accent-1) !important;
+  }

@@ -1,0 +1,31 @@
+:root {
+    --grey:#1E2D3D;
+    --primary-1:#01080E;
+    --primary-2:#011627;
+    --primary-3:#011221;
+    --secondary-1:#607B96;
+    --secondary-2:#3C9D93;
+    --secondary-3:#4D5BCE;
+    --secondary-4:white;
+    --accent-1:#FEA55F;
+    --accent-2:#43D9AD;
+    --accent-3:#E99287;
+    --accent-4:#C98BDF;
+}
+.Green {
+    position: absolute;
+    right: 0;
+    top: -10vh;
+    z-index: -10;
+}
+.Blue {
+    position: absolute;
+    top: 10vh ;
+    right: -10vw;
+    z-index: -9;
+}
+body {
+    overflow: hidden;
+    color: white;
+    background-color: var(--primary-2);
+}

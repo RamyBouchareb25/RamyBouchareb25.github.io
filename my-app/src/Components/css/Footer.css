@@ -1,0 +1,48 @@
+.footer {
+  background-color: #011627;
+    display: flex;
+    color: var(--secondary-1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid var(--grey);
+    justify-content: space-between;
+  }
+  .container-foot {
+    display: flex;
+    border-right: 2px solid var(--grey);
+  }
+  
+  .element {
+    margin: 0;
+    height: 5vh;
+    border-left: 2px solid var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+  }
+  .element.icon-container:hover {
+    color: white !important;
+  }
+  .text-container {
+    border-left: 2px solid var(--grey);
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+  }
+  .text {
+    font-size: 14px;
+    border-left: unset;
+  }
+  .icon {
+    opacity: .6;
+  }
+  .icon-container {
+    aspect-ratio: 1/1;
+    width: unset !important;
+  }
+  .element.icon-container:visited {
+    color: unset;
+  }

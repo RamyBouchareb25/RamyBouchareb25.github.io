@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+}
+pre {
+    background-color: transparent !important;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 62px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 32px;
+    color: #4D5BCE;
+    font-weight: 300;
+}
+p {
+    font-size: 18px;
+}
+.code-snippet {
+    height: 100%;
+    width: 45vw;
+}
+.game {
+    width: 400px;
+    margin-left: 35px;
+}

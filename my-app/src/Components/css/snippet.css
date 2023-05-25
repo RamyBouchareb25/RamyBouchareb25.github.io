@@ -1,0 +1,25 @@
+.snippet-container {
+    background-color: #011221;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.381);
+    font-size: 14px;
+}
+.dgHLiO {
+    justify-content: normal !important;
+}
+.avatar {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 7%;
+    margin-bottom: 10px;
+}
+.avatar-container {
+    display: flex;
+}
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    opacity: 0.8;
+}

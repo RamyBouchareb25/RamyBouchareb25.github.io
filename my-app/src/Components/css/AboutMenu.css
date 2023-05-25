@@ -1,0 +1,48 @@
+.abt {
+    display: flex;
+    height: 100vw;
+    border-right: 1px var(--grey) solid;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+.tools {
+    width: 45px;
+    border-right: 1px var(--grey) solid;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 8px 0;
+    height: 100%;
+    transition: all .5s linear;
+}
+.test {
+    border: unset;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 1px var(--grey) solid;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 8px 0;
+    transition: all .5s linear;
+}
+.tools > button {
+    background-color: unset;
+    border: unset;
+    text-decoration: none;
+}
+.Selected {
+    transition: all 250ms linear;
+    transform: rotate(90deg);
+}
+.top {
+    border-top: var(--grey) 1px solid !important;
+}
+.menu-button:hover {
+    color: var(--secondary-1);
+    cursor: pointer;
+}
+
