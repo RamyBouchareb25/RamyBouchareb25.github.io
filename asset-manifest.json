@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.95f81e72.css",
-    "main.js": "/static/js/main.22d2c605.js",
+    "main.css": "/static/css/main.727f4b1d.css",
+    "main.js": "/static/js/main.2fd672ad.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/Background.png": "/static/media/Background.ee284cf03790ee742954.png",
     "static/media/bolt-down-left.svg": "/static/media/bolt-down-left.aae72339ea1f214f69466bafc00cc441.svg",
@@ -28,12 +28,12 @@
     "static/media/Up Arrow.svg": "/static/media/Up Arrow.ef8a9e14db2ff8f964d3d00f420e068e.svg",
     "static/media/Arrow2.svg": "/static/media/Arrow2.72aa90b947f619140fb62733cdd8f677.svg",
     "static/media/arrow.svg": "/static/media/arrow.343abf190ccae35a3411616bc0ca9d1c.svg",
-    "main.95f81e72.css.map": "/static/css/main.95f81e72.css.map",
-    "main.22d2c605.js.map": "/static/js/main.22d2c605.js.map",
+    "main.727f4b1d.css.map": "/static/css/main.727f4b1d.css.map",
+    "main.2fd672ad.js.map": "/static/js/main.2fd672ad.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95f81e72.css",
-    "static/js/main.22d2c605.js"
+    "static/css/main.727f4b1d.css",
+    "static/js/main.2fd672ad.js"
   ]
 }
