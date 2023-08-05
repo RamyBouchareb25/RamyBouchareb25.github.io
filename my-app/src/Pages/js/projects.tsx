@@ -89,7 +89,7 @@ function Projects() {
         "A real-time chat application built with Flutter and Firebase that enables users to chat with each other seamlessly. It supports group chat, image sharing, and push notifications for instant messaging.",
         [technologies.FLUTTER],
         "#264ee4",
-        "https://github.com/RamyBouchareb25/chat_app")
+        "https://github.com/RamyBouchareb25/chat-box")
   ];
 
   const handleCss = () => {
