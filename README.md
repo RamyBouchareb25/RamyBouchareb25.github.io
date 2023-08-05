@@ -82,7 +82,7 @@ Each project has its own repository on GitHub, where you can find more details a
 
 ## Contact
 
-You can reach me via email at your.email@example.com or connect with me on the following platforms:
+You can reach me via email at ramybouchareb@outlook.com or connect with me on the following platforms:
 
 - [LinkedIn](https://www.linkedin.com/in/ramy-bouchareb-03536b227/)
 - [Instagram](https://www.instagram.com/boucharebramy/)
