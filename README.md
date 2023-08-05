@@ -1,6 +1,6 @@
 # Portfolio Website - Web/Mobile Developer
 
-![Portfolio Preview](portfolio-preview.png)
+![Portfolio Preview](Website.png)
 
 ## Introduction
 
