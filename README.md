@@ -74,9 +74,9 @@ Feel free to explore the website and learn more about my skills, projects, and e
 
 Here are some of the projects featured on the website:
 
-1. [Project 1](https://github.com/RamyBouchareb25/chat_app): A chatting app made with flutter and firebase
-2. [Project 2](https://github.com/RamyBouchareb25/UnityTraining): A Unity game made for training
-3. [Project 3](https://github.com/RamyBouchareb25/Weather): A Weather app made with flutter
+1. [Chat Box](https://github.com/RamyBouchareb25/chat_app): A chatting app made with flutter and firebase
+2. [Unity Training](https://github.com/RamyBouchareb25/UnityTraining): A Unity game made for training
+3. [Weather App](https://github.com/RamyBouchareb25/Weather): A Weather app made with flutter
 
 Each project has its own repository on GitHub, where you can find more details and source code.
 
