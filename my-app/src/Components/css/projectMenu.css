@@ -1,0 +1,13 @@
+.label:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .ctx {
+        height: auto !important;
+        width: auto !important;
+    }
+    .menu-container {
+        flex-direction: column;
+    }
+}

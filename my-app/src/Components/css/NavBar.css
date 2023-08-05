@@ -4,6 +4,7 @@
     font-weight: 400;
   }
   .navbar {
+    height: 35px;
     overflow: hidden;
     border-bottom: var(--grey) 1px solid;
   }
@@ -25,7 +26,7 @@
   .nav-element {
     display: block;
     color: var(--secondary-1);
-    height: 5vh;
+    height: 35px;
     text-decoration: none;
     border-right: var(--grey) 1px solid;
     border-left: var(--grey) 1px solid;
@@ -50,7 +51,6 @@
     border-bottom: none;
     border-top: none;
     font-family: unset;
-    background-color: #011627;
     line-height: 2pc;
   }
   .underline {
@@ -66,4 +66,33 @@
     color: white !important;
     border-bottom: white 1px solid;
     box-shadow: inset 0px -9px 5px -4px var(--accent-1) !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    .open {
+      height: auto !important;
+      transition: all 1s ease-in-out;
+    }
+    .nav-element{
+      line-height: 2pc;
+      padding: 8px 0;
+      width: 100%;
+      border-left: none;
+      border-right: none;
+      box-shadow: none !important;
+      border-bottom: var(--secondary-1) 1px solid;
+    }
+    .name {
+      padding-left: 1.5vw;
+      padding-top: 1.5vh;
+      border-bottom: none;
+    }
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .nav-container > li:first-child > a {
+      border-top: var(--secondary-1) 1px solid;
+    }
   }

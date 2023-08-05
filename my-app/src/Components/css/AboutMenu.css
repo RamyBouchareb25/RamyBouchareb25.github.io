@@ -46,3 +46,11 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    .tools {
+        display: none;
+    }
+    .abt{
+        display: block;
+    }
+}

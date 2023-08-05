@@ -31,11 +31,11 @@ const ContactMenu = forwardRef((props,ref) => {
             }}>
                 <p className="elem-container">
                     <img src={mail} alt="e-mail" className="icon"/>
-                    <a className="elem-button" href="mailto:ramybouchareb@outlook.com">ramybouchareb@outlook.com</a>
+                    <a className="elem-button" href="mailto:ramybouchareb@outlook.com" target="_blank">ramybouchareb@outlook.com</a>
                 </p>
                 <p className="elem-container">
                     <img src={phone} alt="phone" className="icon"/>
-                    <a className="elem-button" href="tel:+213772864262">+213772864262</a>
+                    <a className="elem-button" href="tel:+213772864262" target="_blank">+213772864262</a>
                 </p>
             </div>
             <button className="Contact-Button border-top" onClick={handleClick2}>
@@ -49,11 +49,11 @@ const ContactMenu = forwardRef((props,ref) => {
             }}>
                 <p className="elem-container">
                     <img src={linkSvg} alt="Link" className="icon small"/>
-                    <a className="elem-button" href="https://www.instagram.com/boucharebramy/">Instagram Account</a>
+                    <a className="elem-button" href="https://www.instagram.com/boucharebramy/" target="_blank">Instagram Account</a>
                 </p>
                 <p className="elem-container">
                     <img src={linkSvg} alt="Link" className="icon small"/>
-                    <a className="elem-button" href="https://www.linkedin.com/in/ramy-bouchareb-03536b227/">Linkedin Account</a>
+                    <a className="elem-button" href="https://www.linkedin.com/in/ramy-bouchareb-03536b227/" target="_blank">Linkedin Account</a>
                 </p>
 
             </div>

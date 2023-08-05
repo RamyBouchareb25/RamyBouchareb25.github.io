@@ -4,19 +4,21 @@ import '../css/form.css'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function Form() {
     const form = useRef(null);
     const sendEmail = (e) => {
         e.preventDefault();
-        document.querySelector('form').reset();
         toast.promise(
             new Promise((resolve, reject) => {
             emailjs.sendForm('service_z8t1nn9', 'template_vwgwc8w', form.current, 'IshnMMztVs03TrGgV')
                 .then((response) => {
                   resolve(response);
+                  document.querySelector('form').reset();
                 })
                 .catch((error) => {
                   reject(error);
+                  document.querySelector('form').reset();
                 });
             }),
             {

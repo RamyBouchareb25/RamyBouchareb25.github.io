@@ -4,10 +4,11 @@ import Form from '../../Components/js/from';
 import Menu from '../../Components/js/ContactMenu'
 import Editor from '@monaco-editor/react';
 import '../css/Contact.css'
-
+import { useMediaQuery } from '@material-ui/core';
 
 
 function Contact() {
+  const isSmallScreen = useMediaQuery('(max-width: 960px)');
   let name ="" ,email ="",message ="";
   const value = `
   const button = document.querySelector('#sendBtn');
@@ -44,21 +45,23 @@ function Contact() {
       transition={{ duration: 0.3 }}
       style={{
         display: "flex",
+        flexDirection: isSmallScreen ? "column" : "row",
       }}
         >
+        {isSmallScreen ? <h2 className='title'>_contact-me</h2> : null}
         <Menu ref={myRef}/>
         <div ref={myRef1} className='form-container'>
           <Form />
         </div>
         <div style={{
           width: Width,
-        }}>
+        }}>{ isSmallScreen ? null :
             <Editor theme='vs-dark' options={{
               minimap: {
                 enabled: false, // Disable the minimap
               },
             }} height="100%" width="100%" defaultLanguage="javascript" defaultValue={value} />
-        </div>
+          }</div>
         </motion.div>
     );
 }

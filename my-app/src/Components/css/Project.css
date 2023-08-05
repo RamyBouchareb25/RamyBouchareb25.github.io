@@ -1,0 +1,66 @@
+.project {
+    display: inline-block;
+    position: relative;
+}  
+.projects-container{
+    overflow: scroll;
+    height: 93vh;
+    flex: 1;
+}
+.small-container > * {
+    margin: 20px;
+}
+.project-container {
+    overflow: hidden;
+    position: relative;
+    border: var(--secondary-1) 1px solid;
+    border-radius: 15px;
+    height: 38vh;
+}
+
+.project-button{
+    color: white;
+    border-radius: 0.5em;
+    padding: 10px 25px;
+    background: #1C2B3A;
+    transition: all 250ms ease 0s;
+    margin: 15px 10px;
+}
+.view {
+    position: absolute;
+    bottom: 0;
+}
+.project-button:hover{
+    background-color: #263B50;
+}
+h5 {
+    color: #5565E8;
+}
+h5 > span {
+    color: var(--secondary-1);
+    font-weight: lighter;
+}
+.small-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 100px auto;
+}
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: #8c080800;
+}
+::-webkit-scrollbar-track {
+    background-color: #2d865400; /* Set the background color of the track */
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-1); /* Set the color of the scrollbar thumb */
+}
+@media screen and (max-width: 680px) {
+    .project-container {
+        height: auto;
+    }
+    .project-button {
+        position: initial;
+    }
+}

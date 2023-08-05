@@ -1,0 +1,22 @@
+.snake-container {
+    position: relative;
+    width: 235px;
+    height: 445px;
+    background-color: #05222F;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 20px 0px rgb(0 0 0);
+}
+.snake-button {
+    position: absolute;
+    visibility: visible;
+    color: black;
+    background-color: var(--accent-1) !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    bottom: 20%;
+    left: 28%;
+    font-family: 'Fira Code', monospace;
+}
+.snake-button:hover {
+    color: #fff;
+}

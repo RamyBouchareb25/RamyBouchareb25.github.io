@@ -7,3 +7,29 @@
     display: flex;
     padding: 50px;
 }
+.GameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-2);
+    background-color: var(--primary-2);
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    line-height: 2.5;
+    font-weight: bold;
+}
+.restart-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-1);
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.restart-button:hover {
+    color: white;
+}

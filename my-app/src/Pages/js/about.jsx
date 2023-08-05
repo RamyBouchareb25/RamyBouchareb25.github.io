@@ -5,11 +5,11 @@ import Menu from '../../Components/js/AboutMenu'
 import Cross from '../../image/Cross.svg'
 import ShowCase from '../../Components/js/ShowCase'
 import { about } from '../../information/MyInfo'
-
+import { useMediaQuery } from '@material-ui/core'
 function About() {
   
 let [inf, setInf] = useState(about)
-
+const isSmallScreen = useMediaQuery('(max-width: 960px)')
 return (
   <motion.div 
   initial={{ opacity: 0, x: -100 }}
@@ -18,13 +18,17 @@ return (
       transition={{ duration: 0.3 }}
         className='container-about'
         >
+            {isSmallScreen ? <h2 className='title'>_about-me</h2> : null}
             <Menu changeInfo={setInf}/>
           <div className='info-container'>
               <menu type="context" className='context-menu'>
-                <div className='element-about'>
-                  personal-info
-                  <button className='close-button button-unset'><img src={Cross} alt="Close" /></button>
-                </div>
+                {isSmallScreen ? null 
+                : <div className='element-about'>
+                personal-info
+                <button className='close-button button-unset'><img src={Cross} alt="Close" /></button>
+              </div>
+                }
+                
               </menu>
               <div className='about-container'>
                 <div className='information'>

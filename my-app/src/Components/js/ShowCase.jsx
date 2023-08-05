@@ -4,6 +4,7 @@ import Snippet from './snippet'
 import details from '../../image/comments-icon.svg'
 import star from '../../image/Star.svg'
 import emptyStar from '../../image/Star_empty.svg'
+import { useMediaQuery } from '@material-ui/core'
 function ShowCase() {
     function myArrow() {
         return (
@@ -11,6 +12,7 @@ function ShowCase() {
           </div>
         )
       }
+      const isSmallScreen = useMediaQuery('(max-width: 960px)')
       const getTimeDifference = (timestamp) => {
         const currentDate = new Date();
         const previousDate = new Date(timestamp);
@@ -82,7 +84,7 @@ function ShowCase() {
         gist();
     },[])
     return (
-        <Carousel itemPadding={[25, 20]} verticalMode itemsToShow={2} renderArrow={myArrow} renderPagination={myArrow}>
+        <Carousel itemPadding={[25, 20]} verticalMode itemsToShow={isSmallScreen ? 1000 : 2} renderArrow={myArrow} renderPagination={myArrow}>
             {codes.map((element,index) =>  {
                 return (
                     <div>
@@ -102,7 +104,6 @@ function ShowCase() {
                             }}>
                                 <span style={{
                                     color: '#5565E8',
-                                    fontWeight: 'bold',
                                     fontSize: '1rem',
                                 }}>@RamyBouchareb25</span>
                                 <div style={{
@@ -116,11 +117,13 @@ function ShowCase() {
                                         display: 'inline',
                                         marginRight: '10px',
                                     }}> details </button>
-                                    <img src={emptyStar} alt="Star Empty" />
-                                    <button className='button-unset btn' style={{
-                                        color: 'var(--secondary-1)',
-                                        display: 'inline',
-                                    }}>3 stars </button>
+                                    {isSmallScreen ? null : <>
+                                        <img src={emptyStar} alt="Star Empty" />
+                                        <button className='button-unset btn' style={{
+                                            color: 'var(--secondary-1)',
+                                            display: 'inline',
+                                        }}>3 stars </button>
+                                    </>}
                                 </div>
                             </div>
                                 <span style={{
@@ -129,7 +132,7 @@ function ShowCase() {
                                 }}>Created {time[index]}</span>
                             </div>
                         </div>
-                        <Snippet code={element} lang={languages[index]} isActive={true} width='35vw'/>
+                        <Snippet code={element} lang={languages[index]} isActive={true} width={isSmallScreen ? '75vw' :'35vw'}/>
                     </div>
                 )
             }

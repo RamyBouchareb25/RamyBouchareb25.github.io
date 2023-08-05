@@ -29,3 +29,8 @@ body {
     color: white;
     background-color: var(--primary-2);
 }
+@media screen and (max-width: 600px) {
+    body {
+        overflow: scroll;
+    }
+}   

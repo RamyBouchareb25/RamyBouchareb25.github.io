@@ -23,3 +23,8 @@
 .btn:hover {
     opacity: 0.8;
 }
+@media screen and (max-width: 600px) {
+    .snippet-container {
+        margin: auto;
+    }
+}

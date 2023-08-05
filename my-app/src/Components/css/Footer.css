@@ -15,6 +15,7 @@
   }
   
   .element {
+    color: var(--secondary-1);
     margin: 0;
     height: 5vh;
     border-left: 2px solid var(--grey);
@@ -27,12 +28,14 @@
     color: white !important;
   }
   .text-container {
-    border-left: 2px solid var(--grey);
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-right: 5px;
+    width: 11vw;
   }
   .text {
+    width: 100%;
     font-size: 14px;
     border-left: unset;
   }
@@ -41,8 +44,22 @@
   }
   .icon-container {
     aspect-ratio: 1/1;
-    width: unset !important;
   }
   .element.icon-container:visited {
     color: unset;
+  }
+  @media screen and (max-width: 600px) {
+    .footer{
+      position: fixed;
+      justify-content: flex-end;
+    }
+    .container-foot > p {
+      width: 300px !important;
+    }
+    .text-container {
+      border-left: none;
+    }
+    .text-container > a {
+      border: none;
+    }
   }

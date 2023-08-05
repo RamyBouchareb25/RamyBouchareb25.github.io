@@ -10,6 +10,7 @@ import phone from "../../image/phone-icon.svg";
 import folder1 from "../../image/Bio.svg";
 import folder2 from "../../image/Interest.svg";
 import folder3 from "../../image/Education.svg";
+import { useMediaQuery } from "@material-ui/core";
 import {
   experience,
   skills,
@@ -22,6 +23,7 @@ import {
 } from "../../information/MyInfo";
 
 function AboutMenu({ changeInfo }) {
+  const isSmallScreen = useMediaQuery("(max-width: 960px)");
   const icons = [folder1, folder2, folder3];
   const [menuNames, setMenuNames] = useState(["bio", "interests", "education"]);
   const [menuItems, setMenuItems] = useState([
@@ -230,12 +232,13 @@ function AboutMenu({ changeInfo }) {
             })}
           </div>
         </div>
-        <button className="Contact-Button top" onClick={handleClick2}>
+        
+             <button className="Contact-Button top" onClick={handleClick2}>
           <img
             className={isActive[1] ? "Arrow Selected" : "Arrow"}
             src={Arrow}
             alt="Arrow"
-          />
+            />
           contacts
         </button>
         <div
@@ -245,7 +248,7 @@ function AboutMenu({ changeInfo }) {
             overflow: "hidden",
             transition: "all 0.3s ease-in-out",
           }}
-        >
+          >
           <p className="elem-container">
             <img src={mail} alt="e-mail" className="icon" />
             <a className="elem-button" href="mailto:ramybouchareb@outlook.com">
@@ -259,9 +262,11 @@ function AboutMenu({ changeInfo }) {
             </a>
           </p>
         </div>
+        
       </div>
     </menu>
-  );
-}
-
-export default AboutMenu;
+    );
+  }
+  
+  export default AboutMenu;
+  

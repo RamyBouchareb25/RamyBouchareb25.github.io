@@ -50,3 +50,41 @@
     white-space: pre-wrap;
     color: var(--secondary-1);
 }
+@media screen and (max-width: 600px) {
+    .container-about {
+        flex-direction: column;
+    }
+    .abt {
+        height: auto !important;
+        width: 100vw;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .information {
+        width: auto;
+        height: auto;
+    }
+    .showcase {
+        width: 100vw;
+        height: auto;   
+        margin-left: 30px;
+    }
+    .avatar-container {
+        width: 100vw;
+        justify-content: center;
+    }
+    .title {
+        font-size: 15px;
+        margin: 10vw 2vw;
+        color: white;
+        text-align: start;
+    }
+    .Contact-Button {
+        background-color: var(--grey) !important;
+        margin-bottom: 5px;
+    }
+    .context-menu {
+        border: none !important;
+    }
+}
